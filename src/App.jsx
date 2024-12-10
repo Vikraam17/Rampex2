@@ -6,12 +6,13 @@ import { About, ContactUs, Home, Services } from './Pages'
 import { Routes,Route } from 'react-router-dom'
 import Login from './components/LogIn/login'
 import SignUp from './components/SignUp/Signup'
-import UseState from './Hooks/useState'
+import UseState from './Hooks/UseState'
 import UseEffect from './Hooks/UseEffect'
 import UseRef from './Hooks/UseRef'
 import UseReducer from './Hooks/UseReducer'
 import UseMemo from './Hooks/UseMemo'
 import UseCallBack from './Hooks/UseCallBack'
+import Git from './Git/Git'
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/UseReducer" element={<UseReducer/>}></Route>
           <Route path="/UseMemo" element={<UseMemo/>}></Route>
           <Route path="/UseCallBack" element={<UseCallBack/>}></Route>
+          <Route path="/Git" element={<Git/>}></Route>
         </Routes>
       </div>
       <Footer/>

@@ -10,6 +10,7 @@ const Home = () => {
       <Link className='link' to="/UseReducer">UseReducer</Link>
       <Link className='link' to="/UseMemo">UseMemo</Link>
       <Link className='link' to="/UseCallBack">UseCallBack</Link>
+      <Link className='link' to="/Git">Git</Link>
       </div>
   )
 }

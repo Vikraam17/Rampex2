@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 
-var UseRef = () => {
-  var [text, setText] = useState("");
-  var prevText = useRef(text);
+const UseRef = () => {
+  const [text, setText] = useState("");
+  const prevText = useRef(text);
   useEffect(()=>{
     console.log(prevText);
     prevText.current = text
