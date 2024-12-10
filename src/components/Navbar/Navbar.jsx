@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Navbar.css"
 import { FaBarsStaggered } from "react-icons/fa6";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -17,11 +18,11 @@ const toggleMenu =()=>{
           <h2>Logo</h2>
         </div>
         <ul className={isOpen ? "nav-link active" : "nav-link"}>
-          <li><a href="/">Home</a></li>
-          <li><a href="/About" >About</a></li>
-          <li><a href="/Services" >Services</a></li>
-          <li><a href="/contactUs" >Contact us</a></li>
-          <li><a href="/LogIn" >LogIn</a></li>
+          <li><NavLink className='link' to="/">Home</NavLink></li>
+          <li><NavLink className='link' to="/About">About</NavLink></li>
+          <li><NavLink className='link'to="/Services">Services</NavLink></li>
+          <li><NavLink className='link'to="/contactUs">Contact us</NavLink></li>
+          <li><NavLink className='link' to="/LogIn">LogIn</NavLink></li>
         </ul>
         <div className="icon" onClick={toggleMenu}>
         <FaBarsStaggered />

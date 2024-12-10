@@ -1,5 +1,5 @@
 
-a{
+.link{
   text-decoration: none;
 }
 header{
@@ -32,7 +32,7 @@ header{
   margin: 0 0.5rem;
 }
 
-.container ul li a{
+.container ul li .link{
   color: #212a3c ;
   font-size: 1.3rem;
   padding: 0.7rem 1rem;
@@ -41,7 +41,7 @@ header{
   border-radius: 4px;
 }
 
-.container ul li a:hover,.container ul li a.active{
+.container ul li link:hover,.container ul li link.active{
   background-color: #ecf0f1;
 }
 
